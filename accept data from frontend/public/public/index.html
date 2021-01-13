@@ -1,0 +1,49 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pratice node</title>
+    <style>
+        .container{
+            max-width: 1200px;
+            margin :auto;
+        }
+
+        .row{
+            display:flex;
+        }
+        .col{
+
+        }
+        .text-center{
+            text-align:center;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <form  id="loginForm">
+            <input type="text" id="username" placeholder="username" />
+            <input type="text" id="password" placeholder="password">
+            <button type="submit">submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
+
+<!-- so the file is in the public folder which we had declared as static file for
+
+app.use("/",express.static(path.resolve(__dirname,'public')));
+in server.js // which is running over server 
+
+ so on localhost:1000/ we well see this index.html file 
+ which is basically the form to get username and password
+-->

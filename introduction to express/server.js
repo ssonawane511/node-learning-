@@ -1,11 +1,8 @@
-const http = require('http');
+const express = require('express');
+const app = express();
 
-const server = http.createServer( (req,res)=>{
-
-    res.write('hello client over there');
-    res.end();
+app.get('/',(req,res)=>{
+    res.send("hello sagar ")
 })
 
-server.listen(2000,()=>{
-    console.log("server is activated at port 2000");
-})
+app.listen(1000)
